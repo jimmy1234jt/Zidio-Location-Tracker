@@ -1,8 +1,9 @@
 .bottom {
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 60px;
 }
 
 .bottom-left {
@@ -10,19 +11,23 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    max-width: 710px;
+    max-width: 800px;
     min-height: 360px;
     flex: 1.5;
-    border: red 1px solid;
     padding-left: 42px;
+    background-color: #F9F9FB;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .bottom-right{
     display: flex;
     flex: 1;
     flex-direction: column;
-    max-width: 440px;
-    padding-right: 42px;
+    justify-content: space-between;
+    max-width: 600px;
+    gap: 25px;
+    
 }
 
 .inputs {
@@ -32,19 +37,57 @@
     padding: 20px 0 10px 0;
 }
 
+.arrow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .location-input {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.location-input small {
+    color: #35768D;
+    font-size: 14px;
+}
+
+.location-input legend {
+    font-size: 18px;
+    font-size: 800;
+}
+
+.location-input input {
+    width: 230px;
+    height: 35px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
 
 .suggestion {
     padding: 0 10px 20px 20px ;
+}
+.suggestion h4 {
+    font-size: 20px;
+    font-weight: 200;
 }
 
 .suggestions-list {
     display: flex;
     gap: 20px;
     padding: 0 0 0 20px;
+}
+.suggestions-list button {
+    padding: 4px 9px;
+    font-size: 16px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 3px;
 }
 
 .submit-Nav{
@@ -58,7 +101,7 @@
     padding: 0 10px;
     border-radius: 10px;
     gap: 10px;
-
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .submit-Nav p {
@@ -70,8 +113,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    min-height: 165px;
-    border: 1px solid blue;
+    min-height: 150px;
+    border-radius: 10px;
+    background-color: #F9F9FB;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+
 }
 
 .saved-header {
@@ -92,8 +139,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    min-height: 165px;
-    border: 1px solid green;
+    min-height: 150px;
+    border-radius: 10px;
+    background-color: #F9F9FB;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding:  10px 20px;
+
 }
 
 .recent-header {
@@ -107,4 +158,13 @@
     display: flex;
     gap: 20px;
     padding:  0 0 0 20px;
+}
+
+.recent-list button , .saved-list button {
+    padding: 4px 9px;
+    font-size: 16px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 3px;
 }

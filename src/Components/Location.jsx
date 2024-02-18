@@ -16,7 +16,7 @@ function Location() {
                 <div className='inputs'>
                     <div className='location-input'>
                         <legend>Choose Start Location</legend>
-                        <input />
+                        <input placeholder='e.g United Kingdom'/>
                         <small> + Choose from map</small>
                     </div>
                     <div className='arrow-icon'>
@@ -24,12 +24,12 @@ function Location() {
                     </div>
                     <div className='location-input'>
                         <legend>Choose Destination</legend>
-                        <input />
+                        <input  placeholder='e.g New york'/>
                         <small> + Choose from map</small>
                     </div>
                 </div>
                 <div className='suggestion'>
-                    <h3>suggestion</h3>
+                    <h4>Suggestion</h4>
                     <div className='suggestions-list'>
                         <button>Hotel</button>
                         <button>Atm</button>
