@@ -1,0 +1,110 @@
+.bottom {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 710px;
+    min-height: 360px;
+    flex: 1.5;
+    border: red 1px solid;
+    padding-left: 42px;
+}
+
+.bottom-right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 440px;
+    padding-right: 42px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-around;
+    align-self: stretch;
+    padding: 20px 0 10px 0;
+}
+
+.location-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion {
+    padding: 0 10px 20px 20px ;
+}
+
+.suggestions-list {
+    display: flex;
+    gap: 20px;
+    padding: 0 0 0 20px;
+}
+
+.submit-Nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin: 0 30px 20px 0;
+    background-color: #88A9FE;
+    height: 44px;
+    padding: 0 10px;
+    border-radius: 10px;
+    gap: 10px;
+
+}
+
+.submit-Nav p {
+    font-size: 20px;
+}
+
+.saved {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 165px;
+    border: 1px solid blue;
+}
+
+.saved-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.saved-list {
+    display: flex;
+    gap: 20px;
+    padding:  0 0 0 20px;
+}
+
+.recent  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 165px;
+    border: 1px solid green;
+}
+
+.recent-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.recent-list {
+    display: flex;
+    gap: 20px;
+    padding:  0 0 0 20px;
+}
