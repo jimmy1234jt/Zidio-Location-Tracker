@@ -3,13 +3,14 @@ import arrowicon from "../assets/arrow.svg"
 import navicon from "../assets/navigate.svg"
 import recenticon from "../assets/Recent.svg"
 import savedicon from "../assets/Saved.svg"
+import Map from './Map'
 import "./Location.css"
 
 function Location() {
   return (
     <div className='location'>
         <div className='top'>
-        
+            
         </div>
         <div className='bottom'>
             <div className='bottom-left'>
