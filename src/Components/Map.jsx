@@ -7,21 +7,21 @@ import toast from 'react-hot-toast';
 const Map = () => {
 
   const [location, setLocation] = React.useState([0,0]);
-  const [alert, setAlert] = React.useState(false);
 
   const getLocation = () => {
     const success = (position) => {
+      // check if the location has changed then do this:
+      if (location[0] === position.coords.latitude && location[1] === position.coords.longitude) return;
       toast.success("Location Updated Successfully")
       setLocation([position.coords.latitude, position.coords.longitude]);
     };
     const failure = () => {
-      // alert("Unable to retrieve your location or permission denied.");
       toast.error("Unable to retrieve your location or permission denied.");
     };
     if (navigator.geolocation) {
       navigator.geolocation.watchPosition(success, failure);
     } else {
-      setAlert(true);
+      toast.error("Unable to retrieve your location or permission denied.");
     }
   };
 
@@ -43,7 +43,7 @@ const Map = () => {
       />
       <Marker position={location}>
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+          Your current <br /> Location
         </Popup>
       </Marker>
     </MapContainer>
