@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, ZoomControl } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import Spinner from './Spinner';
 import toast from 'react-hot-toast';
@@ -35,7 +35,9 @@ const Map = () => {
     <MapContainer
       center={location}
       zoom={10}
-      style={{ height: '50vh', width: '100%' }}
+      // style={{ height:'50vh' , width: '100%' }}
+      zoomControl={false}
+      className='MapContainer'
     >
       <TileLayer
         url="https://api.maptiler.com/maps/basic-v2/{z}/{x}/{y}.png?key=knsMPDdvtrm6AQO31Kfq"
@@ -46,6 +48,7 @@ const Map = () => {
           Your current <br /> Location
         </Popup>
       </Marker>
+      <ZoomControl position='bottomright' classname="zoom-btn" />
     </MapContainer>
       )
   );
