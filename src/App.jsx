@@ -49,7 +49,7 @@ function App() {
           <SignInButton />
         </SignedOut>
         <SignedIn>
-          <UserButton />
+          {/* <UserButton /> */}
         </SignedIn>
       </header>
       <Toaster position="top-right" />

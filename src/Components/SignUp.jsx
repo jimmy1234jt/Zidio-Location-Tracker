@@ -1,6 +1,7 @@
 import React from "react";
-import { SignIn, SignUp } from "@clerk/clerk-react";
-import { Link } from "react-router-dom";
+import { SignIn, SignUp, useAuth } from "@clerk/clerk-react";
+import { Link, useNavigate } from "react-router-dom";
+import Spinner from "./Spinner";
 
 const SignUpPage = () => {
           const { getToken, isLoaded, isSignedIn } = useAuth();
